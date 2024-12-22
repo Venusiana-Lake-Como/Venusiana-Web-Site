@@ -6,16 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e3cfcf;
     color: #333;
     padding: 20px;
     text-align: center;
 }
 
 header {
-    background-color: #ff69b4;
-    padding: 20px;
-    color: white;
+    background-color: #c85b92;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 h1 {
