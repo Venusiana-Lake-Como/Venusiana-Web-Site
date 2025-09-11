@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venusiana Boutique - Lake Como</title>
+    <meta name="description" content="Venusiana Boutique in Menaggio, Lake Como - Unique and vibrant fashion choices inspired by independent artistic designs and colorful expressions.">
+    <meta name="keywords" content="boutique, fashion, Lake Como, Menaggio, Venusiana, colorful fashion, artistic designs, clothing store">
+    <meta name="author" content="Venusiana Boutique">
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Venusiana Boutique - Lake Como | Colorful Fashion & Artistic Designs">
+    <meta property="og:description" content="Discover unique and vibrant fashion choices inspired by independent artistic designs at Venusiana Boutique in Menaggio, Lake Como.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.venusiana.it/">
+    <meta property="og:image" content="https://www.venusiana.it/image1.jpg">
+    <meta property="og:site_name" content="Venusiana Boutique">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Venusiana Boutique - Lake Como">
+    <meta name="twitter:description" content="Unique and vibrant fashion choices inspired by independent artistic designs at Lake Como.">
+    <meta name="twitter:image" content="https://www.venusiana.it/image1.jpg">
+    
+    <title>Venusiana Boutique - Lake Como | Colorful Fashion & Artistic Designs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +33,7 @@
 
     <section class="intro">
         <h2 style="font-family: 'Brush Script MT', cursive; font-size: 2em; font-weight: bold; margin-bottom: 20px;">About Us</h2>
-        <p style="font-size: 0.9em;"><em>Located in the beautiful town of Menaggio, Lake Como, Venusiana offers a unique and vibrant fashion choices, inspired by indipendet artistic designs and colorful expressions.</em></p>
+        <p style="font-size: 0.9em;"><em>Located in the beautiful town of Menaggio, Lake Como, Venusiana offers a unique and vibrant fashion choices, inspired by independent artistic designs and colorful expressions.</em></p>
     </section>
 
     <section class="images">
@@ -25,9 +44,70 @@
             <a href="gallery.html#image3"><img src="image3.jpg" alt="Fashion style 3"></a>
         </div>
     </section>
+
+    <section class="contact">
+        <h2 style="font-family: 'Brush Script MT', cursive; font-weight: bold; font-size: 1.8em; margin-bottom: 20px;">Contact Us</h2>
+        
+        <div style="margin-bottom: 30px;">
+            <p><strong>Visit our boutique:</strong><br>
+            <a href="https://www.google.com/maps/place/Via+al+Lago,+15,+22017+Menaggio+CO,+Italy/@46.0202391,9.2373497,17z/data=!4m6!3m5!1s0x47843d0ef6bd249d:0x92f370159651658f!8m2!3d46.0204924!4d9.2387123!16s%2Fg%2F11c28jqjrc?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #333;">Via al Lago, 15, 22017 Menaggio CO, Italy</a></p>
+            <p><strong>Phone:</strong> +39 0344 040640</p>
+            <p><strong>WhatsApp/Mobile:</strong> +39 333 3670960</p>
+            
+            <a href="https://wa.me/393333670960" class="whatsapp-btn" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp"> Contact us on WhatsApp
+            </a>
+        </div>
+
+        <div class="contact-form">
+            <h3 style="margin-bottom: 20px; color: #c85b92;">Send us a message</h3>
+            <form action="#" method="post" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your style preferences, questions, or how we can help you..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Venusiana Boutique. All rights reserved.</p>
         <a href="gallery.html">View Gallery</a>
     </footer>
+
+    <script>
+        // Simple form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Hi! I'm ${name}. ${message}\n\nContact details:\nEmail: ${email}${phone ? `\nPhone: ${phone}` : ''}`;
+            const whatsappUrl = `https://wa.me/393333670960?text=${encodeURIComponent(whatsappMessage)}`;
+            
+            // Open WhatsApp with the message
+            window.open(whatsappUrl, '_blank');
+            
+            // Show confirmation
+            alert('Thank you for your message! You\'ll be redirected to WhatsApp to send your inquiry.');
+        });
+    </script>
 </body>
 </html>
