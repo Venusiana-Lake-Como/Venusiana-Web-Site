@@ -1,0 +1,23 @@
+# Environment variables (keep local)
+.env
+
+# Node modules (if any build tools are added)
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Cache directories
+.cache/
