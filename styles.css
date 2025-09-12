@@ -10,17 +10,22 @@ body {
     color: #333;
     padding: 20px;
     text-align: center;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
     background-color: #c85b92;
-    padding: 10px;
+    padding: 20px;
     color: rgb(255, 255, 255);
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 h1 {
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 p {
@@ -30,29 +35,172 @@ p {
 
 .intro, .contact, .gallery, .location {
     margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    margin-top: 20px;
 }
 
 .image-gallery img {
-    width: 150px;
-    height: 200px;
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
     object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #c85b92;
+    outline: none;
+}
+
+.btn {
+    background-color: #c85b92;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a64a7a;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 20px 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #20c25a;
+    color: white;
+}
+
+.whatsapp-btn img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 footer {
     margin-top: 50px;
-    padding: 10px;
+    padding: 20px;
     background-color: #ff69b4;
     color: white;
+    border-radius: 10px;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    header {
+        padding: 15px;
+    }
+    
+    .intro, .contact, .gallery, .location {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    .image-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+    
+    .image-gallery img {
+        height: 200px;
+    }
+    
+    .whatsapp-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .image-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .image-gallery img {
+        height: 180px;
+    }
 }
