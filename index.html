@@ -51,36 +51,9 @@
         <div style="margin-bottom: 30px;">
             <p><strong>Visit our boutique:</strong><br>
             <a href="https://www.google.com/maps/place/Via+al+Lago,+15,+22017+Menaggio+CO,+Italy/@46.0202391,9.2373497,17z/data=!4m6!3m5!1s0x47843d0ef6bd249d:0x92f370159651658f!8m2!3d46.0204924!4d9.2387123!16s%2Fg%2F11c28jqjrc?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #333;">Via al Lago, 15, 22017 Menaggio CO, Italy</a></p>
-            <p><strong>Phone:</strong> +39 0344 040640</p>
-            <p><strong>WhatsApp/Mobile:</strong> +39 333 3670960</p>
-            
-            <a href="https://wa.me/393333670960" class="whatsapp-btn" target="_blank">
-                <img src="whatsapp.png" alt="WhatsApp"> Contact us on WhatsApp
-            </a>
         </div>
 
-        <div class="contact-form">
-            <h3 style="margin-bottom: 20px; color: #c85b92;">Send us a message</h3>
-            <form action="#" method="post" id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your style preferences, questions, or how we can help you..."></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+
     </section>
 
     <footer>
@@ -88,26 +61,6 @@
         <a href="gallery.html">View Gallery</a>
     </footer>
 
-    <script>
-        // Simple form handling
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-            
-            // Create WhatsApp message
-            const whatsappMessage = `Hi! I'm ${name}. ${message}\n\nContact details:\nEmail: ${email}${phone ? `\nPhone: ${phone}` : ''}`;
-            const whatsappUrl = `https://wa.me/393333670960?text=${encodeURIComponent(whatsappMessage)}`;
-            
-            // Open WhatsApp with the message
-            window.open(whatsappUrl, '_blank');
-            
-            // Show confirmation
-            alert('Thank you for your message! You\'ll be redirected to WhatsApp to send your inquiry.');
-        });
-    </script>
+
 </body>
 </html>
