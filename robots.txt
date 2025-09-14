@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.venusiana.it/sitemap.xml
+
+# Block common bot paths
+Disallow: /tmp/
+Disallow: /.git/
+Disallow: /*?*print=*
+Disallow: /*?*session*
