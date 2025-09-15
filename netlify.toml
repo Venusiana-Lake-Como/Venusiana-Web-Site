@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+
+[build.environment]
+  CLOUDINARY_CLOUD_NAME = "venusiana-boutique"
+
+# Disable automatic image optimization if not needed
+# This prevents Cloudinary errors when the service isn't configured
+[build.processing]
+  skip_processing = false
+
+[build.processing.images]
+  compress = false
+
+# Optional: If you want to enable Cloudinary image optimization in the future,
+# make sure to configure your Cloudinary account and update the cloud name above
