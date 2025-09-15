@@ -2,7 +2,7 @@
 
 [build]
   publish = "."
-  
+
 [build.environment]
   CLOUDINARY_CLOUD_NAME = "venusiana-boutique"
 
@@ -13,9 +13,11 @@
 [build.processing.images]
   compress = false
 
-# Netlify plugin: check for broken links, but do not fail the build
+# Netlify plugin: check for broken links
 [[plugins]]
   package = "netlify-plugin-checklinks"
 
   [plugins.inputs]
-    failOnError = false
+    # Add any valid inputs here if needed
+    
+
