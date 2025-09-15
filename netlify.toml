@@ -1,9 +1,11 @@
 # Netlify build configuration
 
 [build]
+  # The folder containing your site files; '.' means the repo root
   publish = "."
 
 [build.environment]
+  # Cloudinary configuration
   CLOUDINARY_CLOUD_NAME = "venusiana-boutique"
 
 # Disable automatic image optimization if not needed
@@ -13,11 +15,13 @@
 [build.processing.images]
   compress = false
 
-# Netlify plugin: check for broken links
+# Optional: Check for broken links
 [[plugins]]
   package = "netlify-plugin-checklinks"
 
   [plugins.inputs]
-    # Add any valid inputs here if needed
+    # You can leave this empty or configure valid inputs like entryPoints, recursive, etc.
+
+
     
 
