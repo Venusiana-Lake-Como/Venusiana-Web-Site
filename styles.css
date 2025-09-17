@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     background-color: #e3cfcf;
     color: #333;
     padding: 20px;
@@ -23,40 +23,77 @@ header {
     margin-bottom: 30px;
 }
 
-
-p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+.site-location {
+    font-family: 'Montserrat', sans-serif, cursive;
+    font-size: 1em;
+    color: #fff; /* Matches brand color */
+    margin: 10px 0 20px 0;
+    letter-spacing: 0.6px;
+    font-weight: 400;
 }
+
+.tagline {
+    font-family: 'Montserrat', sans-serif, cursive;
+    font-size: 1em;
+    color: #fff; /* Matches brand color */
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+    letter-spacing: 0.6px;
+}
+.contact-address p {
+    font-size: 0.9em; /* Slightly smaller if needed */
+    color: #602D6B;    /* Brand color */
+    margin-bottom: 10px;
+}
+
 h1, .venusiana-title {
-    font-family: 'Playfair Display', 'Dancing Script', cursive, serif;
-    font-size: 3em;
+    font-family: 'Dancing Script', 'Pacifico', 'Playfair Display', cursive, serif;
+    font-size: 5em;
     font-weight: 900;
     margin-bottom: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    color: #602D6B; /* Deep purple, sampled from the logo */
+    background-color: #F5FBF9; /* Very light mint, matches logo background */
+    border-radius: 5em;
+    padding: 0.2em 0.5em;
 }
 
 h2, .about-us-title, .explore-fashion-title, .contact-title, .gallery-title, .location-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Caveat', 'Shadows Into Light', cursive;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
 .venusiana-identity {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5em;
-    color: #c85b92;
+    font-family: 'Dancing Script', 'Pacifico', cursive;
+    font-size: 1.5em;            /* Matches your request */
+    color: #c85b92;              /* Soft pinkish-purple */
     margin-bottom: 0;
+    letter-spacing: 2px;         /* Optional: for consistency with .venusiana-title */
+    font-weight: 700;            /* Optional: adds more prominence */
+    background-color: #F5FBF9;   /* Optional: brand background */
+    border-radius: 2em;          /* Optional: gentle rounding */
+    padding: 0.1em 0.4em;        /* Optional: subtle padding */
 }
 
-.intro, .contact, .gallery, .location {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    color: #222; /* Improved contrast for readability */
+.contact-address {
+    background-color: #F5FBF9;         /* Light mint to match Venusiana brand */
+    color: #602D6B;                    /* Deep purple for text */
+    padding: 16px 20px;
+    border-radius: 1.5em;
+    font-family: 'Dancing Script', 'Pacifico', cursive;
+    font-size: 1.1em;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(96,45,107,0.07);
+}
+
+.contact-address .contact-link {
+    color: #c85b92;                    /* Soft pinkish-purple for link */
+    text-decoration: underline;
+    font-weight: 200;
+    font-family: inherit;
 }
 
 .image-gallery {
