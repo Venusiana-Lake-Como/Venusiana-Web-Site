@@ -66,6 +66,13 @@ h2, .about-us-title, .explore-fashion-title, .contact-title, .gallery-title, .lo
     margin-bottom: 15px;
 }
 
+h3, .about-us-title, .explore-fashion-title, .contact-title, .gallery-title, .location-title {
+    font-family: 'Dancing Script', 'Shadows Into Light', cursive;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
 .venusiana-identity {
     font-family: 'Dancing Script', 'Pacifico', cursive;
     font-size: 1.5em;            /* Matches your request */
