@@ -108,6 +108,41 @@ h3, .about-us-title, .explore-fashion-title, .contact-title, .gallery-title, .lo
     font-family: inherit;
 }
 
+.instagram-link-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: #F5FBF9;         /* Light mint to match Venusiana brand */
+    color: #602D6B;                    /* Deep purple for text */
+    padding: 16px 24px;
+    border-radius: 1.5em;
+    font-family: 'Dancing Script', 'Pacifico', cursive;
+    font-size: 1.1em;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(96,45,107,0.07);
+    transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+    background-color: #c85b92;         /* Brand pink on hover */
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(96,45,107,0.15);
+}
+
+.instagram-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.instagram-text {
+    font-weight: 400;
+}
+
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -270,6 +305,15 @@ a:hover {
     .whatsapp-btn {
         padding: 10px 15px;
         font-size: 14px;
+    }
+    
+    .instagram-link {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+    
+    .instagram-icon {
+        font-size: 1.3em;
     }
 }
 @media (max-width: 900px) {
