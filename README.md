@@ -4,7 +4,7 @@
 
 A boutique website showcasing the beautiful fashion collection of Venusiana, located in Menaggio, Lake Como.
 
-## 🌟 Features
+## Features
 
 - Modern responsive design
 - Interactive gallery
@@ -12,7 +12,7 @@ A boutique website showcasing the beautiful fashion collection of Venusiana, loc
 - SEO optimized
 - Mobile-friendly
 
-## 🚀 Deployment
+## Deployment
 
 This website is optimized for static hosting platforms like Netlify, Vercel, or GitHub Pages.
 
@@ -39,13 +39,11 @@ For deployment platforms, set the environment variable:
 - `netlify.toml` - Netlify deployment configuration
 - `cloudinary.config.js` - JavaScript configuration for Cloudinary
 
-## 📧 Contact
+## Contact
 
 **Venusiana Boutique**
 - Address: Via al Lago, 15, 22017 Menaggio CO, Italy
-- Phone: +39 0344 040640
-- WhatsApp: +39 333 3670960
 
 ---
 
-© 2024 Venusiana Boutique. All rights reserved.
+© 2024 Venusiana. All rights reserved.
